@@ -1,0 +1,45 @@
+body{
+    margin: 30px;
+    font-family:"Poppins";
+}
+.Grid-container{
+    background: rgba(128, 128, 128, 0.225);
+    margin: 80px auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 100px 200px 300px;
+    gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+.Grid-container > div{
+    background: darkgray;
+    text-align: center;
+    padding: 20px;
+}
+.Grid-container > div:nth-child(1){
+    grid-column:  1 / span 2;
+    /* align-self: end;
+    justify-self: center; */
+}
+.Grid-container > div:nth-child(2){
+    grid-column: span 3;
+}
+.Grid-container > div:nth-child(3){
+    grid-column: span 1;
+}
+.Grid-container > div:nth-child(4){
+    grid-column: 2 / span 4;
+    /* align-self: start;
+    justify-self: start; */
+}
+.Grid-container > div:nth-child(5){
+    grid-column: 1 / span 3;
+}
+.Grid-container > div:nth-child(6){
+    grid-column:  span 3;
+    /* align-self: center;
+    justify-self: end; */
+}
